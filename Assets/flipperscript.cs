@@ -8,19 +8,19 @@ public class flipperscript : MonoBehaviour
     public float pressedPosition = 45f;
     public float hitStrength = 10000f;
     public float flipperDamper = 150f;
-
+    HingeJoint hinge;
     public string inputName;
 
 
     void Start()
     {
-        
+        hinge = GetComponent<HingeJoint>();
     }
 
 
     void Update()
     {
-        if(input.GetAxis(inputName) == 1)
+        if(Input.GetAxis(inputName) == 1)
         {
 
         }
